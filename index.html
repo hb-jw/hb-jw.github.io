@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>郑梁 - 天津大学</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main class="page">
+		<header class="header">
+			<div>
+				<h1 data-zh="郑梁" data-en="Liang Zheng">郑梁</h1>
+				<p class="title" data-zh="博士生 | 天津大学 | 计算机科学与技术" data-en="Ph.D. Student | Tianjin University | Computer Science">博士生 | 天津大学 | 计算机科学与技术</p>
+				<ul class="contact">
+					<li>Email: <a href="mailto:hbjw@tju.edu.cn">hbjw@tju.edu.cn</a></li>
+					<li>GitHub: <a href="https://github.com/hb-jw" target="_blank">hb-jw</a></li>
+					<li data-zh="电话：18905050701" data-en="Phone: 18905050701">电话：18905050701</li>
+					<li data-zh="微信：a2391615959" data-en="WeChat: a2391615959">微信：a2391615959</li>
+				</ul>
+				<div class="badge-group" aria-label="研究方向">
+					<span class="badge" data-zh="投机推理" data-en="Speculative Decoding">投机推理</span>
+					<span class="badge" data-zh="端侧大模型推理系统" data-en="On-device LLM Inference System">端侧大模型推理系统</span>
+					<span class="badge" data-zh="低精度量化预训练系统" data-en="Low-Precision Quantization Pre-training System">低精度量化预训练系统</span>
+					<span class="badge" data-zh="扩散语言模型推理系统" data-en="Diffusion LLM Inference System">扩散语言模型推理系统</span>
+				</div>
+			</div>
+			<div class="header-right">
+				<button class="lang-btn" id="langBtn">EN</button>
+				<img class="profile-photo" src="zhengliang.png" alt="郑梁">
+			</div>
+		</header>
+
+		<section class="section">
+			<h2 class="section-title" data-zh="个人简介" data-en="About">个人简介</h2>
+			<p class="summary" data-zh="天津大学计算机科学与技术直博二年级（预计 2029 年毕业），已发表 2 篇 CCF-A 一作论文（TPDS、ICML）。本科毕业于西北农林科技大学数据科学与大数据专业，专业排名第一。" data-en="Second-year Ph.D. student in Computer Science at Tianjin University (expected 2029), with 2 first-author CCF-A publications (TPDS, ICML). B.S. from Northwest A&amp;F University in Data Science, ranked 1st in major.">天津大学计算机科学与技术直博二年级（预计 2029 年毕业），已发表 2 篇 CCF-A 一作论文（TPDS、ICML）。本科毕业于西北农林科技大学数据科学与大数据专业，专业排名第一。</p>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title" data-zh="教育背景" data-en="Education">教育背景</h2>
+			<div class="entry">
+				<div class="entry-head">
+					<div data-zh="天津大学（985）" data-en="Tianjin University (985)">天津大学（985）</div>
+					<div class="entry-meta" data-zh="直博 | 2024.09 - 2029.06" data-en="Ph.D. (Direct) | 2024.09 - 2029.06">直博 | 2024.09 - 2029.06</div>
+				</div>
+				<p class="subline" data-zh="计算机科学与技术 | 入学特等奖学金" data-en="Computer Science | Outstanding Entrance Scholarship">计算机科学与技术 | 入学特等奖学金</p>
+			</div>
+			<div class="entry">
+				<div class="entry-head">
+					<div data-zh="西北农林科技大学（985）" data-en="Northwest A&amp;F University (985)">西北农林科技大学（985）</div>
+					<div class="entry-meta" data-zh="学士 | 2020.09 - 2024.06" data-en="B.S. | 2020.09 - 2024.06">学士 | 2020.09 - 2024.06</div>
+				</div>
+				<p class="subline" data-zh="数据科学与大数据 | 专业第一 | 国家奖学金×2 | 校级优秀毕业生" data-en="Data Science &amp; Big Data | Ranked 1st | National Scholarship ×2 | Outstanding Graduate">数据科学与大数据 | 专业第一 | 国家奖学金×2 | 校级优秀毕业生</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title" data-zh="科研项目" data-en="Research">科研项目</h2>
+			<div class="publication">
+				<span><strong>Mosaic: Unlocking Long-Context Inference for Diffusion LLMs via Global Memory Planning and Dynamic Peak Taming.</strong> <span class="pub-meta"><b>Liang Zheng</b>, et al. <span class="pub-venue">ICML 2026</span> <span class="pub-badge">CCF-A</span></span></span>
+				<span class="pub-desc" data-zh="面向扩散语言模型（dLLM）的长上下文推理场景，现有推理系统以 KV Cache 为核心的内存管理无法适用于 dLLM。我们发现 dLLM 的内存瓶颈从 KV Cache 转移至瞬态激活值，且内存峰值在 logits 与 FFN 之间随 mask ratio 动态切换；现有框架的局部静态内存规划导致严重碎片化，预留内存超出理论峰值达 43%-78%。因此，我们提出 Mosaic，一个面向 dLLM 的内存高效推理系统，核心贡献包含针对动态峰值的自适应切分策略、基于虚拟寻址的统一激活张量内存池以消除碎片，以及针对 dLLM 的 mask-only logits 高效算子。在相同硬件下，最大可支持上下文长度提升 15.89-32.98×，内存峰均比降低 2.71×，端到端时延降低 4.12%-23.26%。" data-en="For long-context inference of diffusion LLMs (dLLMs), existing KV-Cache-centric memory management is ill-suited. We identified that the memory bottleneck shifts from KV-Cache to transient activations in dLLMs, and the memory peak toggles dynamically between logits and FFN with varying mask ratios; existing frameworks' myopic memory planning causes severe fragmentation, with reserved memory exceeding theoretical peaks by 43%-78%. We propose Mosaic, a memory-efficient dLLM inference system featuring adaptive partitioning for dynamic peaks, a unified activation tensor memory pool via virtual addressing to eliminate fragmentation, and a mask-only logits efficient kernel for dLLMs. On identical hardware, maximum context length increases by 15.89-32.98×, memory peak-to-average ratio reduces by 2.71×, and end-to-end latency decreases by 4.12%-23.26%.">面向扩散语言模型（dLLM）的长上下文推理场景，现有推理系统以 KV Cache 为核心的内存管理无法适用于 dLLM。我们发现 dLLM 的内存瓶颈从 KV Cache 转移至瞬态激活值，且内存峰值在 logits 与 FFN 之间随 mask ratio 动态切换；现有框架的局部静态内存规划导致严重碎片化，预留内存超出理论峰值达 43%-78%。因此，我们提出 Mosaic，一个面向 dLLM 的内存高效推理系统，核心贡献包含针对动态峰值的自适应切分策略、基于虚拟寻址的统一激活张量内存池以消除碎片，以及针对 dLLM 的 mask-only logits 高效算子。在相同硬件下，最大可支持上下文长度提升 15.89-32.98×，内存峰均比降低 2.71×，端到端时延降低 4.12%-23.26%。</span>
+			</div>
+			<div class="publication">
+				<span><strong>ViDA: Lossless VideoQA Acceleration via Selective Sparse Self-Speculation With Parallel Computational Load Management.</strong> <span class="pub-meta"><b>Liang Zheng</b>, et al. <span class="pub-venue">IEEE TPDS 2026</span> <span class="pub-badge">CCF-A</span></span></span>
+				<span class="pub-desc" data-zh="现有的多模态大模型通常存在较长的视觉上下文，特别是在视频大模型中，极大拉高了 decode 时延。然而，现有两类方案各有局限：KV Cache 稀疏方法通常有损，投机推理方法大部分需要训练 drafter，在多模态 LLM 中难以获取且泛化性差。因此，我们提出了针对视频大模型的稀疏自投机范式，利用长视觉上下文的稀疏性进行投机推理。围绕选取哪些 token 与选取多少 token 两个核心问题展开研究，提出了多模态感知的 token 选取与自适应动态稀疏 budget 方案。推理时延降低 20%+，精度无损，且 training-free，即插即用。" data-en="Multimodal LLMs with long visual contexts, especially video LLMs, suffer from high decode latency. Existing two lines of approaches each have limitations: KV-Cache sparsity methods are typically lossy, while speculative decoding methods mostly require training a drafter, which is hard to obtain for multimodal LLMs and lacks generalizability. We propose a sparse self-speculation paradigm for video LLMs, leveraging the sparsity of long visual contexts for speculative inference. We investigate two core questions — which tokens to select and how many to retain — proposing multimodal-aware token selection and adaptive dynamic sparse budget schemes. Achieves 20%+ latency reduction with lossless accuracy, training-free and plug-and-play.">现有的多模态大模型通常存在较长的视觉上下文，特别是在视频大模型中，极大拉高了 decode 时延。然而，现有两类方案各有局限：KV Cache 稀疏方法通常有损，投机推理方法大部分需要训练 drafter，在多模态 LLM 中难以获取且泛化性差。因此，我们提出了针对视频大模型的稀疏自投机范式，利用长视觉上下文的稀疏性进行投机推理。围绕选取哪些 token 与选取多少 token 两个核心问题展开研究，提出了多模态感知的 token 选取与自适应动态稀疏 budget 方案。推理时延降低 20%+，精度无损，且 training-free，即插即用。</span>
+			</div>
+			<div class="publication">
+				<span><strong data-zh="移动端大模型 Agent 高效推理框架" data-en="Efficient On-device LLM Agent Inference Framework">移动端大模型 Agent 高效推理框架</strong> <span class="pub-badge pub-badge-ongoing" data-zh="在研" data-en="Ongoing">在研</span></span>
+				<span class="pub-desc" data-zh="随着 LLM 能力持续增强与 Agent 框架的迭代演进，端侧 Agent 部署需求日益增长。然而，移动端有限的算力与内存使得 Agent 推理面临高时延与资源瓶颈。针对上述挑战，拟研究面向移动端异构算力（CPU/GPU/NPU）的高效协同调度策略，深入移动端系统架构，针对不同 IP 模块特性与系统层级设计协同调度方案，以实现低时延、资源友好的端侧 Agent 推理。" data-en="As LLM capabilities continue to advance and Agent frameworks evolve, the demand for on-device agent deployment is growing rapidly. However, limited compute and memory on mobile platforms lead to high latency and resource bottlenecks for agent inference. To address these challenges, this project investigates efficient heterogeneous co-scheduling strategies across mobile CPU/GPU/NPU, delving into mobile system architecture and designing co-scheduling schemes tailored to the characteristics of different IP modules and system layers to enable low-latency, resource-friendly on-device agent inference.">随着 LLM 能力持续增强与 Agent 框架的迭代演进，端侧 Agent 部署需求日益增长。然而，移动端有限的算力与内存使得 Agent 推理面临高时延与资源瓶颈。针对上述挑战，拟研究面向移动端异构算力（CPU/GPU/NPU）的高效协同调度策略，深入移动端系统架构，针对不同 IP 模块特性与系统层级设计协同调度方案，以实现低时延、资源友好的端侧 Agent 推理。</span>
+			</div>
+			<div class="publication">
+				<span><strong data-zh="低精度预训练系统" data-en="Low-Precision Pre-training System">低精度预训练系统</strong> <span class="pub-badge pub-badge-ongoing" data-zh="在研" data-en="Ongoing">在研</span></span>
+				<span class="pub-desc" data-zh="随着 LLM 参数规模持续增长，参数量与内存 I/O 逐渐成为训练与推理的核心瓶颈，原生低精度预训练为降低训练与推理成本提供了一条有效路径。然而，现有低精度预训练方案探索尚浅，难以在精度保持与训练加速间取得良好平衡。针对这一方向，拟在国产昇腾集群上开展大规模低精度预训练研究，围绕 MXFP8/MXFP4 格式设计高效训练策略，在保证精度的前提下提升训练吞吐。" data-en="As LLM parameter scales continue to grow, model size and memory I/O have become core bottlenecks for training and inference. Native low-precision pre-training offers a promising path to reduce both training and inference costs. However, existing low-precision pre-training schemes remain underexplored, struggling to balance accuracy preservation with training speedup. This project aims to conduct large-scale low-precision pre-training research on domestic Ascend clusters, designing efficient training strategies around MXFP8/MXFP4 formats to improve training throughput while preserving model accuracy.">随着 LLM 参数规模持续增长，参数量与内存 I/O 逐渐成为训练与推理的核心瓶颈，原生低精度预训练为降低训练与推理成本提供了一条有效路径。然而，现有低精度预训练方案探索尚浅，难以在精度保持与训练加速间取得良好平衡。针对这一方向，拟在国产昇腾集群上开展大规模低精度预训练研究，围绕 MXFP8/MXFP4 格式设计高效训练策略，在保证精度的前提下提升训练吞吐。</span>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title" data-zh="获得荣誉" data-en="Honors &amp; Awards">获得荣誉</h2>
+			<p class="honors" data-zh="2024 博士生入学特等奖学金（天津大学）&ensp;|&ensp;校级优秀毕业生 / 院级优秀毕业论文（西北农林科技大学）&ensp;|&ensp;主持国家级大学生创新创业项目，良好结题&ensp;|&ensp;2022—2023 国家奖学金（×2）&ensp;|&ensp;学业一等奖学金（×2）" data-en="2024 Outstanding Doctoral Entrance Scholarship (Tianjin Univ.)&ensp;|&ensp;Outstanding Graduate / Outstanding Thesis (NWAFU)&ensp;|&ensp;National Undergraduate Innovation Project, Good Completion&ensp;|&ensp;2022—2023 National Scholarship (×2)&ensp;|&ensp;First-Class Academic Scholarship (×2)">2024 博士生入学特等奖学金（天津大学）&ensp;|&ensp;校级优秀毕业生 / 院级优秀毕业论文（西北农林科技大学）&ensp;|&ensp;主持国家级大学生创新创业项目，良好结题&ensp;|&ensp;2022—2023 国家奖学金（×2）&ensp;|&ensp;学业一等奖学金（×2）</p>
+		</section>
+	</main>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
